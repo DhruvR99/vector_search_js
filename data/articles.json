@@ -1,0 +1,98 @@
+{
+  "datasetName": "science-article-demo",
+  "embeddingDimensions": 10,
+  "embeddingLabels": [
+    "Space",
+    "Climate",
+    "Ocean",
+    "Biology",
+    "Health",
+    "Neuroscience",
+    "Energy",
+    "Materials",
+    "Physics",
+    "AI"
+  ],
+  "articles": [
+    {
+      "id": "space-1",
+      "title": "A space telescope maps ancient galaxies hidden behind cosmic dust",
+      "category": "Astronomy",
+      "source": "Demo Science Wire",
+      "summary": "Astronomers used infrared observations to study distant galaxies that were previously obscured by cosmic dust, improving models of early star formation.",
+      "embedding": [0.96, 0.02, 0.00, 0.08, 0.00, 0.00, 0.00, 0.04, 0.26, 0.00]
+    },
+    {
+      "id": "climate-1",
+      "title": "Arctic warming is reshaping global weather patterns",
+      "category": "Climate Science",
+      "source": "Polar Research Digest",
+      "summary": "Researchers found that rapid Arctic temperature increases can shift jet stream behavior, influencing heat waves, storms, and drought conditions far beyond the polar region.",
+      "embedding": [0.00, 0.95, 0.18, 0.00, 0.04, 0.00, 0.05, 0.00, 0.06, 0.00]
+    },
+    {
+      "id": "ocean-1",
+      "title": "Coral reef recovery depends on cooler ocean currents and local biodiversity",
+      "category": "Marine Science",
+      "source": "Ocean Lab Review",
+      "summary": "A long-term reef survey shows that coral systems recover faster when cooler currents reduce heat stress and nearby marine biodiversity remains high.",
+      "embedding": [0.00, 0.46, 0.87, 0.28, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+    },
+    {
+      "id": "biology-1",
+      "title": "Microbes in desert soils reveal unexpected strategies for surviving drought",
+      "category": "Biology",
+      "source": "Field Biology Notes",
+      "summary": "Scientists identified microbial communities that reorganize their metabolism during long dry periods, offering clues about resilience in extreme ecosystems.",
+      "embedding": [0.00, 0.33, 0.00, 0.91, 0.05, 0.00, 0.00, 0.00, 0.00, 0.00]
+    },
+    {
+      "id": "health-1",
+      "title": "A nasal vaccine candidate boosts early immune defense against respiratory infection",
+      "category": "Medical Research",
+      "source": "Translational Health Brief",
+      "summary": "An experimental vaccine delivered through the nose triggered strong local immune activity in early trials, a promising sign for blocking infection at the point of entry.",
+      "embedding": [0.00, 0.00, 0.00, 0.12, 0.97, 0.00, 0.00, 0.00, 0.00, 0.00]
+    },
+    {
+      "id": "neuro-1",
+      "title": "Brain signal patterns during sleep may strengthen memory recall",
+      "category": "Neuroscience",
+      "source": "Cognitive Systems Journal",
+      "summary": "Researchers recorded repeating neural activity during sleep and linked the patterns to improved memory recall the next day, shedding light on consolidation mechanisms.",
+      "embedding": [0.00, 0.00, 0.00, 0.07, 0.00, 0.98, 0.00, 0.00, 0.06, 0.00]
+    },
+    {
+      "id": "energy-1",
+      "title": "New battery chemistry could extend grid-scale energy storage",
+      "category": "Energy",
+      "source": "Clean Tech Report",
+      "summary": "A prototype battery design uses abundant materials and a stable electrolyte to improve long-duration storage for renewable electricity systems.",
+      "embedding": [0.00, 0.15, 0.00, 0.00, 0.00, 0.00, 0.93, 0.33, 0.08, 0.00]
+    },
+    {
+      "id": "materials-1",
+      "title": "Flexible semiconductor film bends without losing performance",
+      "category": "Materials Science",
+      "source": "Advanced Materials Bulletin",
+      "summary": "Engineers created a thin semiconductor layer that remains conductive after repeated bending, opening new options for wearable sensors and compact devices.",
+      "embedding": [0.00, 0.00, 0.00, 0.00, 0.04, 0.00, 0.18, 0.96, 0.07, 0.17]
+    },
+    {
+      "id": "physics-1",
+      "title": "Laser-driven fusion experiment improves plasma confinement time",
+      "category": "Physics",
+      "source": "High Energy Review",
+      "summary": "A new fusion chamber design kept plasma stable for longer periods, an incremental but meaningful step toward sustained high-energy reactions.",
+      "embedding": [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.27, 0.00, 0.96, 0.00]
+    },
+    {
+      "id": "ai-1",
+      "title": "Machine learning model helps biologists classify whale calls faster",
+      "category": "AI for Science",
+      "source": "Computational Discovery News",
+      "summary": "A compact machine learning system sorted large archives of whale vocalizations, helping marine biologists identify behavioral patterns across seasons.",
+      "embedding": [0.00, 0.00, 0.41, 0.12, 0.00, 0.05, 0.00, 0.00, 0.00, 0.90]
+    }
+  ]
+}

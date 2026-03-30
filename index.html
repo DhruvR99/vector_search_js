@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vector Search Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Static Vector Search Demo</p>
+        <h1>Science article search with client-side embeddings</h1>
+        <p class="intro">
+          This demo loads a JSON file, reads precomputed embeddings, creates a
+          query embedding in the browser, and ranks articles with cosine
+          similarity. No backend or database is required.
+        </p>
+      </section>
+
+      <section class="search-panel">
+        <form id="search-form" class="search-form">
+          <label class="sr-only" for="query-input">Search query</label>
+          <input
+            id="query-input"
+            name="query"
+            type="search"
+            placeholder="Try: ocean warming and coral reefs"
+            autocomplete="off"
+          />
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="preset-row">
+          <span>Examples:</span>
+          <button class="preset-query" type="button" data-query="space telescope images of distant galaxies">
+            Space telescopes
+          </button>
+          <button class="preset-query" type="button" data-query="battery materials for clean energy">
+            Battery materials
+          </button>
+          <button class="preset-query" type="button" data-query="brain signals and memory formation">
+            Brain research
+          </button>
+        </div>
+      </section>
+
+      <section class="layout">
+        <aside class="card note-card">
+          <h2>How it works</h2>
+          <ol>
+            <li>The app fetches <code>data/articles.json</code>.</li>
+            <li>Each article already includes an embedding vector.</li>
+            <li>A lightweight keyword encoder turns your query into a vector.</li>
+            <li>Cosine similarity ranks the most relevant articles.</li>
+          </ol>
+          <p id="dataset-status" class="status">Loading dataset...</p>
+        </aside>
+
+        <section class="card results-card">
+          <div class="results-header">
+            <h2>Results</h2>
+            <p id="results-meta">Enter a query to search the dataset.</p>
+          </div>
+          <div id="results" class="results-list"></div>
+        </section>
+      </section>
+
+      <footer class="creator-credit">
+        Created by
+        <a href="https://www.linkedin.com/in/dhruv-rana-181707194/?skipRedirect=true" target="_blank" rel="noreferrer">
+          Dhruv
+        </a>
+      </footer>
+    </main>
+
+    <template id="result-template">
+      <article class="result-item">
+        <div class="result-topline">
+          <span class="result-category"></span>
+          <span class="result-score"></span>
+        </div>
+        <h3 class="result-title"></h3>
+        <p class="result-summary"></p>
+        <div class="result-footer">
+          <span class="result-source"></span>
+          <span class="result-themes"></span>
+        </div>
+      </article>
+    </template>
+
+    <script defer src="app.js"></script>
+  </body>
+</html>
